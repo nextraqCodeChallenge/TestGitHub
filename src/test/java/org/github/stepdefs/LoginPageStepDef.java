@@ -37,8 +37,8 @@ public class LoginPageStepDef {
     }
     @Given("I have entered a valid username and password")
     public void i_have_entered_a_valid_username_and_password() {
-        loginPage.enterEmail("mobashwer.a.chowdhury@gmail.com");
-        loginPage.enterPassword("Chowdhury7!");
+        loginPage.enterEmail("shouvo@msn.com");
+        loginPage.enterPassword("@123Test123@");
     }
     @Given("I have entered invalid {string} and {string}")
     public void i_have_entered_invalid_and(String username, String password) {

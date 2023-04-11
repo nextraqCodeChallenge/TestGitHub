@@ -20,7 +20,6 @@ import java.time.Duration;
 public class tokenGenerationStepDef {
 
     private WebDriver driver;
-    private LoginPage loginPage;
 
     @Before
     public void setup(){
@@ -40,9 +39,9 @@ public class tokenGenerationStepDef {
     public void i_am_logged_into_my_git_hub_account() {
         // Write code here that turns the phrase above into concrete actions
         driver.get("https://github.com/login");
-        loginPage = new LoginPage(driver);
-        loginPage.enterEmail("mobashwer.a.chowdhury@gmail.com");
-        loginPage.enterPassword("Chowdhury7!");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.enterEmail("shouvo@msn.com");
+        loginPage.enterPassword("@123Test123@");
         loginPage.clickSigninButton();
         driver.navigate().to("https://github.com/GnosticIT");
         WebElement profileLink = driver.findElement(By.xpath("//summary[@aria-label='View profile and more']//span[@class='dropdown-caret']"));
